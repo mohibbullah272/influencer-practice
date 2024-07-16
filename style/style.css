@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-thin{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+/* shared style */
+.flex{
+    display: flex;
+}
+.btn-primary{
+padding: 10px 24px 10px 24px;
+border-radius: 41px;
+color: white;
+background: rgb(224, 44, 109);
+}
+
+/* header style start hare */
+  ul>li{
+    list-style: none;
+    margin-right:15px ;
+  }
+  .list{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+font-family: Poppins;
+font-size: 16px;
+font-weight: 600;
+align-items: center;
+
+  }
+.nav{
+    justify-content: space-between;
+}
+/* banner style start hare */
+.banner-container{
+    justify-content: space-between;
+}
+
+
+.banner-content{
+ width: 582px;
+height: 270px;
+padding-left: 120px;
+}
+.banner-pic{
+    width: 27rem;
+    height: 26rem;
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    padding-right: 120px;
+}
+.company-container li{
+    list-style: none;
+    
+}
+.company-container{
+    justify-content: space-around;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+/* main style start hare */
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ gap: 30px;
+position: absolute;
+left: 12.25rem;
+right: 12.35rem;
+
+ 
+}
+.collection-img-container{
+width:20rem;
+height:25rem;
+border-radius: 5px;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+background: rgb(255, 255, 255);
+
+
+
+}
+.collection-title{
+color: rgb(24, 25, 31);
+font-family: Poppins;
+font-size: 20px;
+font-weight: 500;
+margin-left: 10px;
+margin-bottom: 20px;
+
+}
+.collection-description{
+color: rgb(120, 120, 133);
+font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+margin-left: 10px;
+
+}
+.collection-img{
+    padding: 17px 15px 0px 10px;
+}
+.collection-main-title{
+color: rgb(58, 58, 58);
+font-family: Poppins;
+font-size: 28px;
+font-weight: 600;
+text-align: center;
+}
+/* medium media query */
+@media screen and (max-width: 576px) {
+    .nav,
+    .banner-container
+    {
+        flex-direction: column;
+    }
+.collection-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
