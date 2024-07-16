@@ -110,14 +110,36 @@ font-weight: 600;
 text-align: center;
 }
 /* medium media query */
-@media screen and (max-width: 576px) {
+@media screen and (max-width:576px) {
     .nav,
     .banner-container
     {
         flex-direction: column;
     }
 .collection-container{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+ align-content: center;
+ left: 5px;
+ right: 5px;
 }
+.company-container{
+    flex-direction: column;
+align-items: center;
+margin-bottom: 10px;
+}
+.collection-main-title{
+    text-align: left;
+}
+.banner-photo-section{
+width:100%;
+margin-top: 100px;
 
+}
+.banner-content{
+   padding-left: 10px;
+   }
+   .banner-title{
+    font-size: 10px;
+    text-align: left;
+   }
 }
